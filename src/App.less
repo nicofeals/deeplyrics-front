@@ -30,6 +30,115 @@
   color: #61dafb;
 }
 
+.logo {
+  .ant-image {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.description {
+  margin-bottom: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.inspired-by {
+  display: none;
+  align-self: center;
+  justify-content: center;
+}
+
+.radio {
+  margin-top: 0;
+}
+
+.text-input {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.band-logos {
+  display: none;
+}
+
+.lyrics {
+  margin: auto;
+  padding: 0%;
+  width: 100%;
+  .ant-card-body {
+    width: auto;
+    padding: 0%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .text-input {
+    margin-top: 20px;
+    width: 400px;
+  }
+
+  .description {
+    font-size: 38px;
+  }
+
+  .lyrics {
+    width: 60%;
+  }  
+
+  .radio {
+    margin-top: 1rem;
+  }
+
+  .logo {
+    .ant-image {
+      margin: auto;
+      width: 60%;
+    }
+  }
+
+  .lyrics {
+    width: 30rem
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .band-logos {
+    display: flex;
+    width: 80%;
+    .ant-image {
+      width: '4rem';
+    }
+  }
+
+  .inspired-by {
+    display: flex;
+  }
+
+  .logo {
+    .ant-image {
+      align-self: center;
+      justify-content: center;
+      display: flex;
+      margin: auto;
+      width: 25rem;
+    }
+  }
+
+  .lyrics {
+    width: 30rem;
+  }  
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
