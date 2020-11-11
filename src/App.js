@@ -48,7 +48,7 @@ class App extends Component {
 
     const queryString = 'input="' + this.state.input.toLowerCase() + '\n"&size=' + this.state.size.toLowerCase()
 
-    fetch('http://127.0.0.1:5000/lyrics?' + queryString, requestOptions)
+    fetch('https://nicolasceccarello.pythonanywhere.com/lyrics?' + queryString, requestOptions)
       .then(response => response.json())
       .then((data) => {
         var res = data.lyrics;

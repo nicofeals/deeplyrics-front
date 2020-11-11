@@ -1,4 +1,5 @@
 const CracoLessPlugin = require('craco-less');
+const CracoEslintWebpackPlugin = require('craco-eslint-webpack-plugin');
 
 module.exports = {
   plugins: [
@@ -20,6 +21,11 @@ module.exports = {
             },
             javascriptEnabled: true,
           },
+        },
+        skipPreflightCheck: true,
+        eslintOptions: {
+          files: 'src/**/*.{js,jsx,ts,tsx}',
+          lintDirtyModulesOnly: true,
         },
       },
     },
