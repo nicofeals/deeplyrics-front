@@ -72,7 +72,9 @@ class App extends Component {
       <HelmetProvider>
         <Layout className="layout">
           <Helmet>
+            <meta charSet="utf-8" />
             <title>deeplyrics</title>
+            <link rel="canonical" href="http://deeplyrics.nicolasceccarello.tech" />
           </Helmet>
           <Header style={{ alignSelf: 'center', marginTop: '2rem', height: "max-content" }}>
             <div className="logo">
