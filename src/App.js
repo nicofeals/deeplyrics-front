@@ -10,6 +10,7 @@ import Beartooth from './assets/beartooth.png'
 import NN from './assets/nn.png'
 import Novelists from './assets/novelists.png'
 import Polaris from './assets/polaris.png'
+import Preview from './assets/preview.png'
 
 const { Title, Text, Link } = Typography;
 const { Header, Content, Footer } = Layout;
@@ -75,6 +76,12 @@ class App extends Component {
             <meta charSet="utf-8" />
             <title>deeplyrics</title>
             <link rel="canonical" href="https://deeplyrics.nicolasceccarello.tech" />
+            <meta name="author" content="Nicolas Ceccarello" />
+            <meta name="image" property="og:image" content={Preview}></meta>
+            <meta
+              name="description" property="og:description"
+              content="This is an AI powered metalcore lyric generator, based on the most popular metalcore bands' lyrics."
+            />
           </Helmet>
           <Header style={{ alignSelf: 'center', marginTop: '2rem', height: "max-content" }}>
             <div className="logo">
