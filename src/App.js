@@ -36,7 +36,7 @@ class App extends Component {
     setTimeout(() => {
       this.setState({ loading: false })
     }, 300000);
-  };
+  }
 
   getLyrics(e) {
     e.preventDefault();
@@ -182,11 +182,11 @@ class App extends Component {
                   footer={null}
                 >
                   <Title level={3}>Description</Title>
-                deeplyrics is based on Deep Learning, allowing text generation from a given input. The model used is a basic Recurrent Neural Network. If you want to read more about how it works, head over to the project's <Link href="https://github.com/nicofeals/deeplyrics" target="_blank">GitHub</Link>.
+                deeplyrics is based on Deep Learning, allowing text generation from a given input. The model used is a basic Recurrent Neural Network. If you want to read more about how it works, head over to the project&quot;s <Link href="https://github.com/nicofeals/deeplyrics" target="_blank">GitHub</Link>.
                 <Title level={3}>Usage</Title>
-                The model used to generate text is hosted on pythonanywhere.com, a free hosting service for educationnal purposes. The used plan only allows 100s of processing time per 24h hour, so please don't spam the generate button. This was done essentialy to demonstrate my work and how my neural network performs. However, feel free to use any generated lyrics for yourself.
+                The model used to generate text is hosted on pythonanywhere.com, a free hosting service for educationnal purposes. The used plan only allows 100s of processing time per 24h hour, so please don&quot;t spam the generate button. This was done essentialy to demonstrate my work and how my neural network performs. However, feel free to use any generated lyrics for yourself.
                 <Title level={3}>Data</Title>
-                The model was trained on about 40 bands' (mainly metalcore except a few expections, but lyrics stay relevant) 20 most popular songs. Architects, BMTH, Casey, nothing,nowhere., Being As An Ocean, Novelists, Parkway Drive, Northlane, just to mention a few.
+                The model was trained on about 40 bands&quot; (mainly metalcore except a few expections, but lyrics stay relevant) 20 most popular songs. Architects, BMTH, Casey, nothing,nowhere., Being As An Ocean, Novelists, Parkway Drive, Northlane, just to mention a few.
               </Modal>
                 <Button type="link" onClick={() => this.setState({ aboutVisible: true })}>
                   <QuestionCircleFilled style={{ fontSize: '1rem' }} />
